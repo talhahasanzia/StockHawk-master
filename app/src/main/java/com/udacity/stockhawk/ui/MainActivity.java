@@ -90,6 +90,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             }
         }).attachToRecyclerView(stockRecyclerView);
 
+        sendBroadcast(new Intent(Intent.ACTION_MAIN)
+                .addCategory(Intent.CATEGORY_HOME));
 
     }
 
